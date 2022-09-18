@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API DOCS</title>
+
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Be+Vietnam+Pro:ital,wght@0,400;0,700;1,500&family=Roboto:wght@300;400&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            width: 80%;
+            padding-top: 30px;
+            background-color: #eee;
+            margin: 0 auto;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 18px;
+        }
+
+        div{
+            background-color: rgb(56, 54, 54);
+            color: white;
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        h3{
+            padding: 10px 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to your favourite book/blog API </h1>
+
+    <section>
+        <div>
+            <h3>api/posts/</h3>
+        <p>this gives you all the books</p>
+        </div>
+
+         <div>
+            <h3>api/posts/"slug"/</h3>
+        <p>this gives you all the single book</p>
+        </div>
+         <div>
+            <h3>api/posts/"params"/</h3>
+        <p>this allows you to search for books</p>
+        </div>
+         <div>
+            <h3>api/posts/slug/"related"/ </h3>
+        <p>this gives you the all the books that are related to the single book you quaried</p>
+        </div>
+         <div>
+            <h3>api/"authors"/</h3>
+        <p>Here you are able to get all the authors in our blog</p>
+        </div>
+
+     <div>
+            <h3>api/authors/"url"/</h3>
+        <p>This gives you a single author and its profile</p>
+        </div>
+
+          <div>
+            <h3>api/authors/"posts"/</h3>
+        <p>Here you are able to get all the post made by a single in our blog</p>
+        </div>
+
+    </section>
+
+    <h1>Note: All this end point only accepts a get request!</h1>
+</body>
+</html>
