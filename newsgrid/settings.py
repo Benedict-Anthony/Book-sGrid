@@ -108,7 +108,7 @@ DATABASES = {
 #     "http://172.30.112.1:3000",
 #      "http://127.0.0.1:3000",
 # ]
-CORS_ALLOW_ALL_ORIGINS: True
+CORS_ALLOW_ALL_ORIGINS=True
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
