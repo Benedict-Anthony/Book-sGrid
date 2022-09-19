@@ -140,7 +140,7 @@ class PostCreateView(APIView):
     def post(self, request,  *args, **kwargs):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
-            # serializer.save()
+            serializer.save()
             return Response({"data":serializer.data}, status=status.HTTP_201_CREATED)
         return Response({"error": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
     
