@@ -4,6 +4,7 @@ from pathlib import Path
 import os
 from datetime import timedelta
 from decouple import config
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -17,7 +18,7 @@ SECRET_KEY = 'django-insecure-(v^#u3xyeg=u()76&fhez9uy-d6xj-i!hvcce0@!92zxy86t51
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["booksgrid.herokuapp.com"]
 
 
 # Application definition
@@ -163,6 +164,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 
+django_heroku.settings(locals())
 # MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 MEDIA_URL = "/media/"
 
