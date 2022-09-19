@@ -1,7 +1,4 @@
-# Created by https://www.toptal.com/developers/gitignore/api/django
-# Edit at https://www.toptal.com/developers/gitignore?templates=django
 
-### Django ###
 
 __pycache__/
 
@@ -14,11 +11,9 @@ db.sqlite3-journal
 
 
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
 
 .venv
 env/
-venv/
+
+
 
